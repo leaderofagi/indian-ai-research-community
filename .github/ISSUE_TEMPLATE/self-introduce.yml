@@ -1,0 +1,45 @@
+name: Self-Introduction (I'm an Indian AI/ML Researcher)
+description: Introduce yourself and connect with other Indian AI researchers
+title: "[Intro] "
+labels: ["introduction"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Your Name
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+      description: University / Lab / Company
+  - type: dropdown
+    id: career_stage
+    attributes:
+      label: Career Stage
+      options:
+        - Undergraduate Student
+        - Graduate Student (MS/PhD)
+        - Postdoctoral Researcher
+        - Early-Career Faculty
+        - Senior Faculty
+        - Industry Researcher
+        - Independent Researcher
+  - type: textarea
+    id: research_interests
+    attributes:
+      label: Research Interests
+      description: What areas of AI/ML do you work in?
+    validations:
+      required: true
+  - type: textarea
+    id: looking_for
+    attributes:
+      label: Looking For
+      description: Collaborators? Mentors? Discussion partners? Job opportunities?
+  - type: input
+    id: community_link
+    attributes:
+      label: Are you part of MCIAIR Alpha yet?
+      description: Join the discussion at https://mciair.in/hc.html

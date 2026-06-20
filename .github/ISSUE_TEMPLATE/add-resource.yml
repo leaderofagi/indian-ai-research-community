@@ -1,0 +1,49 @@
+name: Add a Resource
+description: Suggest a new community, lab, or resource to add to the directory
+title: "[Resource] "
+labels: ["resource"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource Name
+      description: What is this resource called?
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL / Link
+      description: Where can people find it?
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Discussion Platform
+        - Mailing List / Google Group
+        - Slack / Discord
+        - Telegram Group
+        - Research Lab
+        - Conference / Workshop
+        - Internship / Fellowship
+        - GitHub Repo
+        - Funding Opportunity
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Why is this relevant for Indian AI/ML researchers?
+    validations:
+      required: true
+  - type: checkboxes
+    id: affiliation
+    attributes:
+      label: Affiliation
+      options:
+        - label: I am affiliated with this resource
